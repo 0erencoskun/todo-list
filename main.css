@@ -1,0 +1,234 @@
+html {
+  font-size: 10px;
+  background-color: rgb(212, 58, 58);
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 15rem;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: caveat, "Indie Flower", cursive, sans-serif;
+}
+.container {
+  width: 65rem;
+  margin: 20px auto;
+}
+.card-title {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #e2dfdf;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2.2rem;
+  border-bottom: 1px solid black;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cc8899;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+#inputTask {
+  width: 56rem;
+  height: 4rem;
+  font-size: 2.2rem;
+  outline: none;
+  border: 2px solid rgb(147, 97, 197);
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+}
+#inputTask::placeholder {
+  opacity: 1;
+  color: black;
+}
+#btnAdd {
+  height: 4rem;
+  width: 9rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.6rem;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid rgb(147, 97, 197);
+  border-left: 0;
+  font-family: sans-serif;
+}
+#btnAdd:hover {
+  background-color: black;
+  color: white;
+}
+.card-ara {
+  background-color: #321e3a;
+  border-radius: 1.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.6rem;
+}
+.hepsi {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 0px;
+  padding: 0.1rem 1.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 0.2rem;
+}
+.hepsi:hover {
+  opacity: 0.7;
+}
+.card-body {
+  width: 100%;
+  background-color: #cc8899;
+  margin-top: 1rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+input[type="checkbox"] {
+  height: 1.7rem;
+  width: 1.7rem;
+  cursor: pointer;
+}
+.input-task ~ label {
+  cursor: pointer;
+}
+.btnEdit,
+.btnDelete,
+#btnImportant {
+  padding: 0 0.5rem;
+  font-size: 2rem;
+  border: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #321e3a;
+}
+.btnEdit:hover,
+.btnDelete:hover,
+#btnImportant:hover,
+.input-task ~ label:hover {
+  opacity: 0.8;
+}
+@media (max-width: 700px) {
+  .container {
+    width: 60rem;
+  }
+  .btnEdit,
+  .btnDelete,
+  #btnImportant {
+    padding: 0 0.3rem;
+  }
+  html {
+    font-size: 9.5px;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 9px;
+  }
+  .container {
+    width: 500px;
+  }
+  .btnEdit,
+  .btnDelete,
+  #btnImportant {
+    padding: 0 0.2rem;
+  }
+  .socialMedia ul {
+    flex-wrap: wrap !important;
+  }
+  .socialMedia ul li a {
+    font-size: 2rem !important;
+  }
+  .website a {
+    font-size: 2.5rem !important;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 9px;
+  }
+  .container {
+    width: 400px;
+  }
+  .btnEdit,
+  .btnDelete,
+  #btnImportant {
+    padding: 0;
+  }
+}
+.card-body label.checked {
+  text-decoration: line-through;
+}
+#clear {
+  background-color: red;
+  outline: none;
+  padding: 0rem 0.6rem;
+  border: 0px;
+  border-radius: 2rem;
+  font-size: 2rem;
+  color: black;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+#clear:hover {
+  background-color: white;
+  color: red;
+}
+.hepsi.aktive {
+  border: 1px white solid;
+  border-radius: 1rem;
+}
+.oncelikli {
+  color: rgb(104, 136, 39);
+}
+footer {
+  width: 100%;
+  height: 14rem;
+  background-color: azure;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-family: roboto, sans-serif;
+}
+.website {
+  text-align: center;
+  font-size: 3.4rem;
+  letter-spacing: 1.7rem;
+}
+.website a {
+  color: #321e3a;
+}
+.socialMedia ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.socialMedia ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.socialMedia ul li i.fa-brands {
+  color: blue;
+  font-size: 3rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Indie+Flower&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-title"><h1>ToDo App</h1></div>
+      <div class="card-header">
+        <input
+          type="text"
+          placeholder="Görev Giriniz..."
+          id="inputTask"
+          onkeydown="keyPress(event)"
+          autofocus
+        />
+        <button type="submit" id="btnAdd">+Ekle</button>
+      </div>
+      <div class="card-ara">
+        <div>
+          <button type="button" id="all" class="aktive hepsi">Hepsi</button>
+          <button type="button" id="pending" class="hepsi">Bekleyen</button>
+          <button type="button" id="completed" class="hepsi">Tamamlandi</button>
+        </div>
+        <div><button id="clear" onclick="tasksClear()">Temizle</button></div>
+      </div>
+      <div id="todo"></div>
+    </div>
+    <footer>
+      <div class="website"><a href="https://www.erencoskun.net">www.erencoskun.net</a></div>
+      <div class="socialMedia">
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i>0erencoskun</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i>0erencoskun</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-linkedin"></i>0erencoskun</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-github"></i>0erencoskun</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
